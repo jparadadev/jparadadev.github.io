@@ -11,7 +11,7 @@
   contents:
     - title: Master's degree
       institution: University of Malaga, Malaga, Spain
-      year: 2023
+      year: 2022
       description: Master's degree in Computer Science with major in Information Systems Security.
     - title: Bachellor's degree
       institution: University of Malaga, Malaga, Spain
@@ -25,17 +25,18 @@
       institution: Technology 2 Client
       year: 2020 - 2022
       description: >
-        I was a potatoe
+        Development of backend applications with technologies such as Python, Java and Node.js. Databases such as MongoDB, Redis, ElasticSearch and MySQL.
+        Architecture design with DDD, CQRS and Hexagonal Architecture.
     - title: Full-stack developer
       institution: AppInnova
       year: 2019 - 2020
       description: >
-        I was a potatoe
+        Backend and Frontend web application development.
     - title: Full-stack developer
-      institution: TInternalia Group
+      institution: Internalia Group
       year: 2018
       description: >
-        I was a potatoe
+        Backend and Frontend web application development.
 
 - title: Open Source Projects
   type: time_table
