@@ -32,7 +32,7 @@ pagination:
         {% endunless %}
       {% endfor %}
     </ul>
-    <ul class="p-0 m-0">
+    <!--<ul class="p-0 m-0">
       {% for tag in site.display_tags %}
         <li>
           <i class="fas fa-hashtag fa-sm"></i> <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">{{ tag }}</a>
@@ -41,7 +41,7 @@ pagination:
           <p>&bull;</p>
         {% endunless %}
       {% endfor %}
-    </ul>
+    </ul>-->
   </div>
   {% endif %}
 
