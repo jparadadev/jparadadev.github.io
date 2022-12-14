@@ -230,8 +230,8 @@ display_tags: ['Software Engineering', 'IOT', 'Security', 'Games', '日本語'] 
 
 scholar:
 
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Parada]
+  first_name: [Javier]
 
   style: apa
   locale: en
