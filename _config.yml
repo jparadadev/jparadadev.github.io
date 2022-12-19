@@ -223,7 +223,7 @@ jekyll-archives:
     category: '/blog/category/:name/'
 
 display_tags: ['Malware'] # this tags will be dispalyed on the front page of your blog
-display_categories: ['Security', 'IOT', '日本語'] # this tags will be dispalyed on the front page of your blog
+display_categories: ['Security', 'Dev', '日本語'] # this tags will be dispalyed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
