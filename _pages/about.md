@@ -22,4 +22,4 @@ I am a Software enginner and Cybersecurity researcher living in Malaga.
 
 I hold a Bachellor's degree in Computer Science with major in Software Engineering and a Master's Degree in Computer Science with major in Information Systems Security from University of Malaga. 
 
-My main interests are Clean architectures, Software enginnering, Cybersecurity and Defense software based on traceability and detection. Besides, I am interested in internet of things, algorithmics and deep learning.
+My main interests are Clean architectures, Software enginnering, Cybersecurity and Defense software based on traceability and detection. Besides, I am interested in internet of things, algorithmics and malware analysis.
