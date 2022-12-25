@@ -3,8 +3,30 @@
   contents:
     - name: Full Name
       value: Javier Parada
+    - name: Proffesion
+      value: Software engineer and Cybersecurity researcher
     - name: Languages
       value: Spanish, English and Japanese
+
+- title: Experience
+  type: time_table
+  contents:
+    - title: Software Engineer
+      institution: Technology 2 Client
+      year: 2020 - 2023
+      description: >
+        Development of backend applications with technologies such as Python, Java and Node.js. Databases such as MongoDB, Redis, ElasticSearch and MySQL.
+        Architecture design with DDD, CQRS and Hexagonal Architecture.
+    - title: Full-stack developer
+      institution: AppInnova
+      year: 2019 - 2020
+      description: >
+        Backend and Frontend web application development with Nodejs, Angular and MongoDB.
+    - title: Full-stack developer
+      institution: Internalia Group
+      year: 2018
+      description: >
+        Backend and Frontend web application development with PHP, Javascript and MySQL.
 
 - title: Education
   type: time_table
@@ -17,26 +39,6 @@
       institution: University of Malaga, Malaga, Spain
       year: 2020
       description: Bachellor's degree in Computer Science with major in Software engineering.
-
-- title: Experience
-  type: time_table
-  contents:
-    - title: Software Engineer
-      institution: Technology 2 Client
-      year: 2020 - 2022
-      description: >
-        Development of backend applications with technologies such as Python, Java and Node.js. Databases such as MongoDB, Redis, ElasticSearch and MySQL.
-        Architecture design with DDD, CQRS and Hexagonal Architecture.
-    - title: Full-stack developer
-      institution: AppInnova
-      year: 2019 - 2020
-      description: >
-        Backend and Frontend web application development.
-    - title: Full-stack developer
-      institution: Internalia Group
-      year: 2018
-      description: >
-        Backend and Frontend web application development.
 
 - title: Open Source Projects
   type: time_table
