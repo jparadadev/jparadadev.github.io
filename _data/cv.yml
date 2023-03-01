@@ -16,7 +16,7 @@
       year: 2020 - 2023
       description: >
         Development of backend applications with technologies such as Python, Java and Node.js. Databases such as MongoDB, Redis, ElasticSearch and MySQL.
-        Architecture design with DDD, CQRS and Hexagonal Architecture.
+        Architecture design with Domain Driven Design (DDD), Command Query Responsability Segregation (CQRS) and Hexagonal Architecture.
     - title: Full-stack developer
       institution: AppInnova
       year: 2019 - 2020
@@ -43,20 +43,32 @@
 - title: Open Source Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/jparadadev/deepfinder.py">Deepfinder</a>
-      year: 2021-now
+    - title: <a href="https://pypi.org/project/pyvalueobjects/">Python Value-objects</a>
+      year: 2023
+      description: A collection of Value Objects to save time by generalizing types and format validations.
+
+    - title: <a href="https://github.com/jparadadev/tanuki-key-guardian">Tanuki Key Guardian</a>
+      year: 2022
+      description: KMS web service for secure key exchange and isolation of all cryptographic operations. Using DDD & CQRS.
+
+    - title: <a href="https://pypi.org/project/deepfinder/">Deepfinder</a>
+      year: 2021
       description: Python library for searching attributes easily using dot paths. Within structures of type dictionary, list and embedded substructures with simple format 'dict.users.0.name'.
 
-# - title: Honors and Awards
-#   type: time_table
-#   contents:
-#     - year: 1921
-#       items: 
-#         - Nobel Prize in Physics 
-#         - Matteucci Medal
-#     - year: 2029
-#       items: 
-#         - Max Planck Medal
+- title: Honors and Awards
+  type: time_table
+  contents:
+    - year: 2023
+      items: 
+        - Honor's Registration qualification in "Industrial and Cyber-physical Systems Security" for Information Systems Security Master's degree.
+    - year: 2020
+      items: 
+        - Publication of my Bachellor's thesis of Software engineering degree in the official repository of the University of Malaga.
+    - year: 2018
+      items: 
+        - Honor's Registration qualification in "Videogame programming" for Software Engineering degree.
+
+
 # 
 # - title: Academic Interests
 #   type: nested_list
