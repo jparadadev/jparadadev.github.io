@@ -15,8 +15,8 @@
       institution: Technology 2 Client
       year: 2020 - 2023
       description: >
-        Development of backend applications with technologies such as Python, Java and Node.js. Databases such as MongoDB, Redis, ElasticSearch and MySQL.
-        Architecture design with Domain Driven Design (DDD), Command Query Responsability Segregation (CQRS) and Hexagonal Architecture.
+        Application development with Python, Java and Node.js.
+        Architecture design with Domain Driven Design (DDD), Command Query Responsability Segregation (CQRS), Hexagonal Architecture and Event Driven Design.
     - title: Full-stack developer
       institution: AppInnova
       year: 2019 - 2020
