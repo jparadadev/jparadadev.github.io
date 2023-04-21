@@ -5,5 +5,5 @@ description: A collection of Value Objects in Python.
 img: assets/img/projects/pyvalueobjects/logo.png
 importance: 3
 category: Development
-redirect: https://github.com/jparadadev/potatodns
+redirect: https://pypi.org/project/pyvalueobjects/
 ---
