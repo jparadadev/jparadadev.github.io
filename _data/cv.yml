@@ -55,6 +55,10 @@
       year: 2021
       description: Python library for searching attributes easily using dot paths. Within structures of type dictionary, list and embedded substructures with simple format 'dict.users.0.name'.
 
+    - title: <a href="https://www.npmjs.com/package/storable-functions">Storable functions</a>
+      year: 2020
+      description: Nodejs library. Storable and executable functions using array based simple syntax and functional programming.
+
 - title: Honors and Awards
   type: time_table
   contents:
