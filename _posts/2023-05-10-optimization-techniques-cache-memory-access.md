@@ -30,6 +30,15 @@ $ time ./run
 
 As we can see, the program took a few seconds to calculate the result. This is logical because the program has an algorithmic complexity of n^3, with 3 nested loops for each matrix. However, as we will see now, a large part of this time is spent on memory accesses, which are very slow.
 
+<div class="row mt-3 justify-content-md-center">
+    <div class="col-md-4 mt-3 mt-md-0">
+        {% include figure.html path="assets/blog/2023-05-10-optimization-techniques-cache-memory-access/cache-1.png" class="img-fluid rounded" zoomable=true %}
+    </div>
+    <div class="col-md-4 mt-3 mt-md-0">
+        {% include figure.html path="assets/blog/2023-05-10-optimization-techniques-cache-memory-access/cache-2.png" class="img-fluid rounded" zoomable=true %}
+    </div>
+</div>
+
 After seeing the program and running the simple version without any problems, let's see the different optimizations to be made.
 
 
@@ -50,6 +59,15 @@ for (i = 0; i < N; i++)
         for (j = 0; j < N; j++)
             C[i][j] += A[i][k] * B[k][j];
 ```
+
+<div class="row mt-3 justify-content-md-center">
+    <div class="col-md-4 mt-3 mt-md-0">
+        {% include figure.html path="assets/blog/2023-05-10-optimization-techniques-cache-memory-access/cache-3.png" class="img-fluid rounded" zoomable=true %}
+    </div>
+    <div class="col-md-4 mt-3 mt-md-0">
+        {% include figure.html path="assets/blog/2023-05-10-optimization-techniques-cache-memory-access/cache-4.png" class="img-fluid rounded" zoomable=true %}
+    </div>
+</div>
 
 As we can see, we have changed the order of the loops so that they go in the same order as the accesses of matrix C (unlike the unoptimized code). This way, we manage to perform the iterations of matrix C by rows instead of columns, reducing the number of cache misses. This is because cache blocks are filled with information from rows, so in the previous way, we were jumping from row to row, causing a cache miss for each access.
 
@@ -84,6 +102,15 @@ for (i0 = 0; i0 < N; i0+=NB)
                     for (j = j0; j < (j0+NB); j++)
                         C[i][j] += A[i][k] * B[k][j];
 ```
+
+<div class="row mt-3 justify-content-md-center">
+    <div class="col-md-4 mt-3 mt-md-0">
+        {% include figure.html path="assets/blog/2023-05-10-optimization-techniques-cache-memory-access/cache-5.png" class="img-fluid rounded" zoomable=true %}
+    </div>
+    <div class="col-md-4 mt-3 mt-md-0">
+        {% include figure.html path="assets/blog/2023-05-10-optimization-techniques-cache-memory-access/cache-6.png" class="img-fluid rounded" zoomable=true %}
+    </div>
+</div>
 
 As in the previous case, we compile and run the program. The performance has improved compared to the previous execution, as we can see.
 
