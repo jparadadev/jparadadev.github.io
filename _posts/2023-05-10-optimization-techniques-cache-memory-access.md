@@ -74,7 +74,7 @@ for (i = 0; i < N; i++)
 
 As we can see, we have changed the order of the loops so that they go in the same order as the accesses of matrix C (unlike the unoptimized code). This way, we manage to perform the iterations of matrix C by rows instead of columns, reducing the number of cache misses. This is because cache blocks are filled with information from rows, so in the previous way, we were jumping from row to row, causing a cache miss for each access.
 
-As in the previous case, we compile and run the program. The performance has improved compared to the previous execution, as we can see.
+As in the previous case, we compile and run the program. The performance has improved compared to the previous execution.
 
 ```bash
 $ gcc -O0 code_loop_interchange.c -o run_loop_interchange
@@ -118,7 +118,7 @@ for (i0 = 0; i0 < N; i0+=NB)
     </div>
 </div>
 
-As in the previous case, we compile and run the program. The performance has improved compared to the first execution, as we can see.
+As in the previous case, we compile and run the program. The performance has improved compared to the first execution.
 
 ```bash
 $ gcc -O0 code_blocking.c -o run_blocking
@@ -155,13 +155,13 @@ As we can see in this example, we are reducing the number of additions that are 
 
 It is true that we could write the matrix multiplication code line by line. However, we must consider the disadvantages that this entails. The first disadvantage is the readability and potential source of bugs that all the hardcoded operations in the matrix multiplication can bring. The second is the size of the code itself, which will be considerably increased. And finally, there is the issue of code reuse. In this case, we can do it since the matrix we are multiplying has an even width. However, if the unrolling we want to perform is not a multiple of the matrix size, we will end up with a segmentation fault, limiting us to the matrices we can multiply.
 
-As in the previous case, we compile and run the program. The performance has improved compared to the first execution, as we can see.
+As in the previous case, we compile and run the program. The performance has improved compared to the first execution.
 
 ```bash
 $ gcc -O0 code_unrolling.c -o run_unrolling
 $ time ./run_unrolling
 # output:
-# real	0m12,503s
-# user	0m12,493s
-# sys	0m0,009s
+# real	0m4,347s
+# user	0m4,333s
+# sys	0m0,013s
 ```
