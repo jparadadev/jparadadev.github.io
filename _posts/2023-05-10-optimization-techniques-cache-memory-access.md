@@ -25,10 +25,6 @@ Now we compile the program with GCC and run it using the 'time' program to measu
 ```bash
 $ gcc -O0 code.c -o run
 $ time ./run
-# output:
-# real	0m18,774s
-# user	0m18,757s
-# sys	0m0,016s
 ```
 
 As we can see, the program took a few seconds to calculate the result. This is logical because the program has an algorithmic complexity of n^3, with 3 nested loops for each matrix. However, as we will see now, a large part of this time is spent on memory accesses, which are very slow.
@@ -79,10 +75,6 @@ As in the previous case, we compile and run the program. The performance has imp
 ```bash
 $ gcc -O0 code_loop_interchange.c -o run_loop_interchange
 $ time ./run_loop_interchange
-# output:
-# real	0m4,596s
-# user	0m4,586s
-# sys	0m0,009s
 ```
 
 ## Loop blocking
@@ -123,10 +115,6 @@ As in the previous case, we compile and run the program. The performance has imp
 ```bash
 $ gcc -O0 code_blocking.c -o run_blocking
 $ time ./run_blocking
-# output:
-# real	0m6,172s
-# user	0m6,151s
-# sys	0m0,020s
 ```
 
 ## Loop unrolling
@@ -160,8 +148,4 @@ As in the previous case, we compile and run the program. The performance has imp
 ```bash
 $ gcc -O0 code_unrolling.c -o run_unrolling
 $ time ./run_unrolling
-# output:
-# real	0m4,347s
-# user	0m4,333s
-# sys	0m0,013s
 ```
