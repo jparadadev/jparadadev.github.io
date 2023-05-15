@@ -50,7 +50,7 @@ After seeing the program and running the simple version without any problems, le
 This technique consists of reordering the nested loops, so that data access is made in an order that favors cached blocks. For this, it is important to take into account the size of the cache blocks of our processor.
 
 ```c
-// ---------- unoptimized code ----------
+// --------------------------------------
 // for (j = 0; j < N; j++)
 //     for (k = 0; k < N; k++)
 //         for (i = 0; i < N; i++)
@@ -93,7 +93,7 @@ The case of matrix multiplication is a perfect example, as for each row of matri
 
 
 ```c
-// ---------- loop interchange ----------
+// --------------------------------------
 // for (i = 0; i < N; i++)
 //     for (k = 0; k < N; k++)
 //         for (j = 0; j < N; j++)
@@ -134,7 +134,7 @@ $ time ./run_blocking
 The unrolling technique is possibly the simplest of all the techniques seen previously. Its goal is to modify the loop structure in order to reduce the number of instructions to be executed due to the iterators. To make this case more readable, I will apply this optimization to the code optimized with Loop Interchange, although it could also be applied to the blocking optimization technique code.
 
 ```c
-// ---------- loop interchange ----------
+// --------------------------------------
 // for (i = 0; i < N; i++)
 //     for (k = 0; k < N; k++)
 //         for (j = 0; j < N; j++)
