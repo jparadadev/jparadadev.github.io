@@ -33,7 +33,11 @@
   contents:
     - title: Master's degree
       institution: University of Malaga, Malaga, Spain
-      year: 2022
+      year: 2023
+      description: Master's degree in Computer Science with major in Information Systems Security.
+    - title: Japanese language
+      institution: Kai Japanese School, Tokyo
+      year: 2023
       description: Master's degree in Computer Science with major in Information Systems Security.
     - title: Bachellor's degree
       institution: University of Malaga, Malaga, Spain
