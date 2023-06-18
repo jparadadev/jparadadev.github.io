@@ -38,11 +38,13 @@
       institution: University of Malaga, Malaga, Spain
       year: 2023
       description: Master's degree in Computer Science with major in Information Systems Security.
-      description: Master's degree in Computer Science with major in Information Systems Security.
     - title: Bachellor's degree
       institution: University of Malaga, Malaga, Spain
       year: 2020
       description: Bachellor's degree in Computer Science with major in Software engineering.
+    - title: Japanese language
+      institution: Official language school of Malaga, Malaga, Spain
+      year: 2019
 
 - title: Open Source Projects
   type: time_table
