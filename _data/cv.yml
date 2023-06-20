@@ -31,13 +31,13 @@
 - title: Education
   type: time_table
   contents:
-    - title: Japanese language
-      institution: Kai Japanese School, Tokyo
-      year: 2023
     - title: Master's degree
       institution: University of Malaga, Malaga, Spain
       year: 2023
       description: Master's degree in Computer Science with major in Information Systems Security.
+    - title: Japanese language
+      institution: Kai Japanese School, Tokyo, Japan
+      year: 2023
     - title: Bachellor's degree
       institution: University of Malaga, Malaga, Spain
       year: 2020
