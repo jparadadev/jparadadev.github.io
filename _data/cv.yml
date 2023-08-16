@@ -11,6 +11,11 @@
 - title: Experience
   type: time_table
   contents:
+    - title: Cybersecurity researcher
+      institution: University of Malaga
+      year: 2023 - currently
+      description: >
+        Research on cybersecurity in critical infrastructure and industrial environments.
     - title: Software Engineer
       institution: Technology 2 Client
       year: 2020 - 2023
