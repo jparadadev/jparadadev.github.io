@@ -12,7 +12,7 @@
   type: time_table
   contents:
     - title: Cybersecurity researcher
-      institution: University of Malaga
+      institution: NICS Lab
       year: 2023 - now
       description: >
         Research on cybersecurity in critical infrastructure and industrial environments.
