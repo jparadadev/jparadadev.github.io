@@ -2,7 +2,7 @@
 title: "Optimization techniques: Cache memory access" 
 pubDate: "May 10 2023"
 description: "Cache memory accesses optimization techniques are strategies used to improve program performance by minimizing the number of cache misses."
-tags: ["development", "c", "c++", "performance"]
+tags: ["development", "C", "C++", "performance"]
 heroImage: "/blog/2023-05-10-optimization-techniques-cache-memory-access/logo.png"
 ---
 
