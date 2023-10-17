@@ -2,7 +2,7 @@
 title: "Flipper Zero: Install Xtreme Firmware" 
 pubDate: "Oct 8 2023"
 description: "How to install the Xtreme firmware on Flipper Zero."
-tags: ["flipperzero"]
+tags: ["security", "flipperzero"]
 heroImage: "/blog/2023-10-08-flipper-zero-install-xtreme-firmware/logo.png"
 ---
 
