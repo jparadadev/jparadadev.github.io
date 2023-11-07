@@ -1,7 +1,7 @@
 ---
 title: "Using Metasploit with Docker" 
 pubDate: "Oct 17 2023"
-description: "How to use metasploit with docker."
+description: "How to use metasploit framework with docker and docker compose."
 tags: ["security", "docker", "metasploit"]
 heroImage: "/blog/2023-10-17-using-metasploit-with-docker/logo.png"
 ---
