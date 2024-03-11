@@ -91,6 +91,6 @@ if __name__ == '__main__':
     starve(params)
 ```
 
-The complete script code: [dhcp_starvation_attack.py](https://gist.github.com/jparadadev/ade6fa41d8e86f35c04bac09af86aa09)
+The complete script code: [basic_dhcp_starvation_attack.py](https://gist.github.com/jparadadev/ade6fa41d8e86f35c04bac09af86aa09)
 
 
