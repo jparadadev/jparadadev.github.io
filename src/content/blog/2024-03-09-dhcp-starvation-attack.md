@@ -36,7 +36,7 @@ def starve(params):
     is_verbose = params['verbose'] if params.get('verbose') is not None else 1
 ```
 
-In the main loop of the starve function, we generate DHCP Discover packets with random MAC addresses, requesting specific IP addresses within the target network.
+In the main loop of the starve function, we generate DHCP Discover packets with random MAC addresses, requesting specific IP addresses within the target network. Although in this case, we are not responding to the DHCP server's offer, if the DHCP server is not properly configured, it will keep a small session waiting for us to accept the offer or not. By sending multiple requests with different physical addresses, we will quickly cover all the addresses, which will be reserved waiting for our response.
 
 ```python
 for ip_dir in ips_for_feeding:
