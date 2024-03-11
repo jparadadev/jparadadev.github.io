@@ -12,7 +12,9 @@ The second phase is the offer phase. In this phase the DHCP server responds to t
 The third phase is the request phase. In this phase, the client makes a request in order to accept the DHCP server's offer. This message is called "DHCP Request". This message is also broadcast in order to additionally inform the other DHCP servers (if any) that their offers have been rejected in favor of another server.
 The fourth and last phase is the acknowledgement phase. In this phase the DHCP server issues the confirmation to the client by means of a message called "DHCP ACK". From this point on, the client can start communicating over the network.
 
-A "DHCP starvation" attack is a type of malicious attack targeting networks that use the DHCP protocol for IP address allocation. The goal of this attack is to exhaust all the IP addresses available to the DHCP server in order to make it impossible for new devices to connect to the server, even causing a denial of service attack.
+A "DHCP starvation" attack is a type of malicious attack targeting networks that use the DHCP protocol for IP address allocation. The goal of this attack is to exhaust all the IP addresses available to the DHCP server in order to make it impossible for new devices to connect to the server, even causing a denial of service attack. For them we just need to generate multiple DHCP server discovery packets with different MAC addresses in order to exhaust all of them. Additionally, we can respond to all offers by accepting and occupying them. In this way we will exhaust all IP addresses, preventing new devices from connecting.
+
+Traducido con DeepL (https://www.deepl.com/app/?utm_source=ios&utm_medium=app&utm_campaign=share-translation)
 
 Next we are going to see how to do a small proof of concept of this attack, developing a Python script. The first thing to do is to install the necessary dependencies, in this case, the network packet manipulation library "Scapy".
 
