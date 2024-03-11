@@ -2,7 +2,7 @@
 title: Performing a DHCP starvation attack
 pubDate: "March 09 2024"
 description: Understanding and performing a DHCP starvation attack over DHCP servers and networks.
-tags: ["security", "networks", "hacking"]
+tags: ["security", "networks", "hacking", "python"]
 heroImage: "/blog/2024-03-09-dhcp-starvation-attack/logo.png"
 ---
 
