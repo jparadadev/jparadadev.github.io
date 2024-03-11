@@ -7,6 +7,10 @@ heroImage: "/blog/2024-03-09-dhcp-starvation-attack/logo.png"
 ---
 
 To understand what a DHCP starvation attack is, it is important to understand what a DHCP server is and how this protocol works. A DHCP server is a network component in charge of assigning IPs to different devices, associating the physical or MAC address to an IP. This process allows communication between the different devices, using the assigned IPs to identify each other and communicate. The DHCP protocol has up to 4 phases that make it up.
+The first phase is the discovery phase, in which a client connecting to the network broadcasts a DHCP discovery message or "DHCP Discover". The purpose of this message is to find a DHCP server by sending a broadcast message from which it will expect a response.
+The second phase is the offer phase. In this phase the DHCP server responds to the initial message with an offer of an available IP address (also known as a "DHCP Offer") and a number of other network parameters.
+The third phase is the request phase. In this phase, the client makes a request in order to accept the DHCP server's offer. This message is called "DHCP Request". This message is also broadcast in order to additionally inform the other DHCP servers (if any) that their offers have been rejected in favor of another server.
+The fourth and last phase is the acknowledgement phase. In this phase the DHCP server issues the confirmation to the client by means of a message called "DHCP ACK". From this point on, the client can start communicating over the network.
 
 A "DHCP starvation" attack is a type of malicious attack targeting networks that use the DHCP protocol for IP address allocation. The goal of this attack is to exhaust all the IP addresses available to the DHCP server in order to make it impossible for new devices to connect to the server, even causing a denial of service attack.
 
