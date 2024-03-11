@@ -6,7 +6,7 @@ tags: ["security", "networks", "hacking", "python"]
 heroImage: "/blog/2024-03-09-dhcp-starvation-attack/logo.png"
 ---
 
-To understand what a DHCP starvation attack is, it is important to understand what a DHCP server is and how this protocol works. A DHCP server is a network component in charge of assigning IPs to different devices, associating the physical or MAC address to an IP. This process allows communication between the different devices, using the assigned IPs to identify each other and communicate.
+To understand what a DHCP starvation attack is, it is important to understand what a DHCP server is and how this protocol works. A DHCP server is a network component in charge of assigning IPs to different devices, associating the physical or MAC address to an IP. This process allows communication between the different devices, using the assigned IPs to identify each other and communicate. The DHCP protocol has up to 4 phases that make it up.
 
 A "DHCP starvation" attack is a type of malicious attack targeting networks that use the DHCP protocol for IP address allocation. The goal of this attack is to exhaust all the IP addresses available to the DHCP server in order to make it impossible for new devices to connect to the server, even causing a denial of service attack.
 
